@@ -1,0 +1,47 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": ".",
+    },
+  ],
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "RobotCode: Run Current",
+        "type": "robotcode",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "target": "${file}",
+      },
+      {
+        "name": "RobotCode: Run All",
+        "type": "robotcode",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "target": ".",
+      },
+      {
+        "name": "RobotCode: Default",
+        "type": "robotcode",
+        "request": "launch",
+        "purpose": "default",
+        "presentation": {
+          "hidden": true,
+        },
+        "pythonConfiguration": "RobotCode: Python",
+      },
+      {
+        "name": "RobotCode: Python",
+        "type": "debugpy",
+        "request": "attach",
+        "presentation": {
+          "hidden": true,
+        },
+      },
+    ],
+  },
+}
